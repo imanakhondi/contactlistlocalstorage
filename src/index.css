@@ -1,13 +1,175 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
 body {
+  background-color: #161B2F;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.formContainer input{
+  margin-bottom: 10px;
+}
+.contactDetailsContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button{
+  margin-top: 10px;
+  color: #fff;
+  background: linear-gradient(90deg, rgba(187,19,226,1) 0%, rgba(187,19,226,1) 63%, rgba(98,25,226,1) 100%);
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+  height: 30px;
+  border-radius: 8px;
+  margin: 5px 0;
+  padding: 0 10px;
+    
+}
+.addContact{
+  width: 600px;
+  margin: 20px;
+}
+
+
+@media screen and (max-width: 768px){
+
+  .addContact{
+      min-width: 370px;
+  }
+}
+
+/* addContact */
+.addContainer{
+  background: #2b2e41;
+  border: 1px solid #656a74;
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+.addContainer .form{
+  color: #494C5D;
+    font-weight: bold;
+    font-size: 18px;
+}
+.addContainer input[type="submit"]{
+  margin-top: 10px;
+  color: #fff;
+  background: linear-gradient(90deg, rgba(187,19,226,1) 0%, rgba(187,19,226,1) 63%, rgba(98,25,226,1) 100%);
+  border: none;
+  cursor: pointer;
+}
+.addContainer .submit{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.addContainer input, .addContainer .address {
+  width: 100%;
+  height: 30px;
+  border: 2px solid #656A74;
+  border-radius: 8px;
+  margin: 5px 0;
+  padding: 0 10px;
+  background: #494C5D;
+}
+
+.addContainer .address{
+  height: 70px;
+}
+
+
+/* contactList */
+.contactList .button{
+  margin-top: 10px;
+  color: #fff;
+  background: linear-gradient(90deg, rgba(187,19,226,1) 0%, rgba(187,19,226,1) 63%, rgba(98,25,226,1) 100%);
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+a{
+  text-decoration:none
+}
+
+.contactList{
+  min-width: 600px;
+}
+
+@media screen and (max-width: 768px){
+
+  .contactList{
+      min-width: 370px;
+  }
+}
+
+/* contact */
+
+.contactcontainer{
+  display: flex;
+  justify-content: space-between;
+  background: #252A3D;
+  align-items: center;
+  padding: 18px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  color: #fff;
+
+}
+.contactcontainer button {
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 5px 0;
+  padding: 0 10px;
+}
+.contactcontainer .avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.contactcontainer .info{
+  display: flex;
+}
+.contactcontainer .btn{
+  background-color: #22202F;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.contactcontainer .trash{
+  color: #FC6472;
+
+}
+.contactcontainer .edit{
+  color: #5BE7F5;
+}
+
+.toastCustomize > div{
+  background-color: #252A3D;
 }

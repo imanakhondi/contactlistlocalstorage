@@ -1,0 +1,9 @@
+.container{
+    background-color: #161B2F;
+    height: 60px;
+display: flex;
+align-items: center;
+justify-content:center;
+color: #fff;
+border-bottom: 1px solid #656A74
+}
